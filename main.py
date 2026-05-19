@@ -1,5 +1,4 @@
 def greet(name):
-    return f"Hello, {name}!"
-
-if __name__ == "__main__":
-    print(greet("World"))
+    if not name or name.strip() == "":
+        return "Hi, anonymous!"    
+    return f"Hello, {name}!"x
